@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { ActionTypes } from '../state/action';
+import { User } from '../state/reducer';
 
 /**
  * 获取 redux action
@@ -12,6 +13,13 @@ export default function useAction() {
             dispatch({
                 type: ActionTypes.SetValue,
                 payload: count,
+            });
+        },
+
+        setUser(user: User) {
+            dispatch({
+                type: ActionTypes.SetUser,
+                payload: user,
             });
         },
     };
