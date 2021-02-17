@@ -53,6 +53,13 @@ function reducer(state: State = initialState, action: Action): State {
             }
         }
 
+        case ActionTypes.SetEntries: {
+            return {
+                ...state,
+                entries: action.payload as Entry[],
+            }
+        }
+
         default:
             return state;
     }

@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { ActionTypes } from '../state/action';
-import { User } from '../state/reducer';
+import { User, Entry } from '../state/reducer';
 
 /**
  * 获取 redux action
@@ -22,5 +22,12 @@ export default function useAction() {
                 payload: user,
             });
         },
+
+        setEntries(entries: Entry[]) {
+            dispatch({
+               type: ActionTypes.SetEntries,
+                payload: entries,
+            });
+        }
     };
 }
