@@ -42,5 +42,8 @@ export async function getEntries() {
             createTime: "001",
         },
     ]
+}
 
+export async function addEntry() {
+    return "002";
 }

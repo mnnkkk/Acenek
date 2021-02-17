@@ -28,6 +28,13 @@ export default function useAction() {
                type: ActionTypes.SetEntries,
                 payload: entries,
             });
+        },
+
+        addEntry(entry: Entry) {
+            dispatch({
+               type: ActionTypes.AddEntry,
+                payload: entry,
+            });
         }
     };
 }

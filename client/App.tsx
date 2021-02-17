@@ -3,6 +3,7 @@ import Counter from "./modules/Counter/Counter";
 
 import UserInfo from './modules/UserInfo';
 import EntryList from "./modules/EntryList";
+import AddEntry from "./modules/AddEntry";
 
 import './App.less';
 
@@ -14,7 +15,7 @@ function App() {
             <header className="App-header">
                 <UserInfo />
                 <EntryList />
-                <Counter />
+                <AddEntry />
             </header>
         </div>
     );
